@@ -1,0 +1,91 @@
+.comment {
+  margin-top: 2rem;
+}
+
+.commentContent {
+  display: flex;
+
+  gap: 1rem;
+}
+
+.commentContent > .containerComment {
+  flex: 1;
+}
+
+.commentBox {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: var(--gray-700);
+}
+
+.commentBox > header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.commentBox > header > div > strong {
+  display: block;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.commentBox > header > div > time {
+  display: block;
+  font-size: 0.75rem;
+  line-height: 1.6;
+}
+
+.commentBox > p {
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.commentBox > header > button {
+  border: 0;
+  color: var(--gray-400);
+  line-height: 0;
+  background-color: transparent;
+  border-radius: 4px;
+}
+
+.commentBox > header > button:hover {
+  color: var(--red-300);
+}
+
+.containerComment > footer > button {
+  margin-top: 1rem;
+  border: 0;
+  background-color: transparent;
+  color: var(--gray-400);
+  line-height: 1.6;
+  border-radius: 4px;
+  padding: 0 4px;
+
+  font-size: 0.875rem;
+
+  display: flex;
+  align-items: center;
+}
+
+.containerComment > footer > button > svg {
+  margin-right: 12px;
+}
+
+.containerComment > footer > button > span::before {
+  content: "\2022";
+  margin: 0 6px;
+}
+
+.containerComment > footer > button:hover {
+  color: var(--green-300);
+}
+
+.containerComment > footer > button:focus {
+  color: var(--green-500);
+  font-weight: bold;
+}
